@@ -30,7 +30,6 @@ def clean_data(df,constant_and_drop=False):
 
     #handling with null values and dummifying columns
     df = impute_median(df, ['avg_rating_of_driver'])
-
     dummy_cols = ['phone', 'rated_driver', 'city']
     df = dummify(df, dummy_cols, constant_and_drop=constant_and_drop)
 
